@@ -9,12 +9,12 @@ public class IntiliazationBlock {
 	}
 
 	public IntiliazationBlock() {
-       System.out.println(" a value has intilize before consructor call   "+a);
+		System.out.println(" a value has intilize before consructor call   " + a);
 	}
 
 	public static void main(String[] args) {
 		System.out.println("this is main method ");
 		IntiliazationBlock block = new IntiliazationBlock();
-     
+
 	}
 }

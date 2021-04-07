@@ -12,7 +12,7 @@ public class DuplicateCharacter {
 	public static void main(String[] args) {
 		DuplicateCharacter character = new DuplicateCharacter();
 		String str = "abhishek sahu";
-		character.findDuplicate(str);
+		DuplicateCharacter.findDuplicate(str);
 
 	}
 /**

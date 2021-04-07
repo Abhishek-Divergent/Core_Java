@@ -19,8 +19,8 @@ public class Employee {
 	 * @param hireDate date of joining
 	 * @param salary   salary of employee
 	 */
-	public Employee(String name, LocalDate hireDate, Double salary) {
-     
+	private Employee(String name, LocalDate hireDate, Double salary) {
+
 		this.name = name;
 		this.hireDate = hireDate;
 		this.salary = salary;
@@ -46,28 +46,27 @@ public class Employee {
 	 * @param salary
 	 * @return
 	 */
-	public static Employee StaticMethod(String name, LocalDate hireDate, Double salary) {
+	public static Employee getInstace(String name, LocalDate hireDate, Double salary) {
 		return new Employee(name, hireDate, salary);
 	}
 
 	public static void main(String[] args) {
 		Employee employee[] = new Employee[4];
-		employee[0] = StaticMethod("Abhisek Sahu", LocalDate.of(2021, 03, 28), 123.234);
-		employee[1] = StaticMethod("ram", LocalDate.of(2021, 03, 28), 1221233.234);
-		employee[2] = StaticMethod("bharat", LocalDate.of(2021, 03, 28), 124523.234);
-		employee[3] = StaticMethod("kallu sahu ", LocalDate.of(2021, 03, 28), 3423.234);
-		var s = StaticMethod("kallu sahu ", LocalDate.of(2021, 03, 28), 12423423.234);
+		employee[0] = getInstace("Abhisek Sahu", LocalDate.of(2021, 03, 28), 123.234);
+		employee[1] = getInstace("ram", LocalDate.of(2021, 03, 28), 1221233.234);
+		employee[2] = getInstace("bharat", LocalDate.of(2021, 03, 28), 124523.234);
+		employee[3] = getInstace("kallu sahu ", LocalDate.of(2021, 03, 28), 3423.234);
+		var s = getInstace("kallu sahu ", LocalDate.of(2021, 03, 28), 12423423.234);
 		for (Employee e : employee) {
 			System.out.println(e.getName() + "  " + e.getSalary() + " " + e.getHireDate());
 		}
 		System.out.println(s.equals(employee[3]));
 
 	}
-	
+
 	public boolean equals(Employee e) {
-		return this.name.equals(e.name) ;
-		
+		return this.name.equals(e.name);
+
 	}
-	
 
 }
