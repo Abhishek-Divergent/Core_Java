@@ -65,7 +65,7 @@ public class Employee {
 	}
 
 	public boolean equals(Employee e) {
-		return this.name.equals(e.name);
+		return this.name.equals(e.name) && this.salary.equals(e.salary) && this.salary.equals(e.salary);
 
 	}
 
