@@ -20,10 +20,7 @@ public class ThreadPart1 extends Thread {
 	 */
 		ThreadPart1 part1=new ThreadPart1();
 		part1.start();
-		
 		System.out.println("1="+Thread.currentThread().getName());
-		
-		
 		System.out.println(Thread.currentThread().isAlive());
 		
 		
