@@ -1,5 +1,6 @@
 package com.divergent.corejava.multithreading;
 
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 public class AtomicVariableSample {
@@ -25,13 +26,19 @@ public class AtomicVariableSample {
 		LOGGER.info("Counter is " + c.count);
 	}
 }
+
 class Counter extends Thread {
-	int count = 0;
+	AtomicInteger count;
+
+	public Counter() {
+		count = new AtomicInteger();
+
+	}
 
 	public void run() {
-		int max = 1;
+		  int max = 1_000_00_000;
 		for (int i = 0; i < max; i++) {
-			count++;
+			this.count.addAndGet(i);
 		}
 	}
 }
