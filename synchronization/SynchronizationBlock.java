@@ -1,4 +1,4 @@
-package com.divergent.corejava.multithreading;
+package com.divergent.corejava.synchronization;
 
 public class SynchronizationBlock extends Thread {
 

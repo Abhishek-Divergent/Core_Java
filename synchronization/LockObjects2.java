@@ -1,4 +1,4 @@
-package com.divergent.corejava.multithreading;
+package com.divergent.corejava.synchronization;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Logger;

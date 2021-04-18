@@ -1,4 +1,4 @@
-package com.divergent.corejava.Genric;
+package com.divergent.corejava.lambdaexpression;
 
 import java.util.ArrayList;
 import java.util.List;

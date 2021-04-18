@@ -1,4 +1,4 @@
-package com.divergent.corejava.multithreading;
+package com.divergent.corejava.synchronization;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
