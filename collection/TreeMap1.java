@@ -12,13 +12,13 @@ public class TreeMap1 {
 		      map.put(101,"Vijay");    
 		      map.put(103,"Rahul");    
 		        
-		      for(Map.Entry m:map.entrySet()){    
+		      for(Map.Entry<Integer,String> m:map.entrySet()){    
 		       System.out.println(m.getKey()+" "+m.getValue());    
 		      }    
 		
               map.remove(101)	;
               System.out.println("After Remove");
-              for(Map.Entry m:map.entrySet()){    
+              for(Map.Entry<Integer,String> m:map.entrySet()){    
    		       System.out.println(m.getKey()+" "+m.getValue());    
    		      }  
 	

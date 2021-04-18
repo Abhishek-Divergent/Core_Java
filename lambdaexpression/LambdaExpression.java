@@ -16,11 +16,10 @@ public class LambdaExpression {
 //			System.out.println(string);
 //
 //		}
-         numbers.forEach(a ->{
-        	 System.out.println(a);
-         });
-	
-		
+		numbers.forEach((a) -> {
+			System.out.println(a);
+		});
+
 	}
 
 }

@@ -1,7 +1,6 @@
 package com.divergent.corejava.collection;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Level;
@@ -27,7 +26,7 @@ public class ListArrayList1 {
 		System.out.println("List : " + l);
 		
 		myLogger.info("fetach data through  Iterator");
-		Iterator itr=l.iterator();  
+		Iterator<Integer> itr=l.iterator();  
 		while(itr.hasNext()){  
 		System.out.println(itr.next());  
 		}  

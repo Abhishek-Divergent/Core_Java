@@ -18,7 +18,7 @@ public class QueuePriorityQueue {
 		System.out.println("head:"+queue.peek());  
 		
 		System.out.println("iterating the queue elements:");  
-		Iterator itr=queue.iterator();  
+		Iterator<String> itr=queue.iterator();  
 		while(itr.hasNext()){  
 		System.out.println(itr.next());  
 		}  
